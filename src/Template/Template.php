@@ -1,6 +1,6 @@
-<?php namespace Wn\Generators\Template;
+<?php namespace FlickerLeap\Generators\Template;
 
-use Wn\Generators\Template\TemplateLoader;
+use FlickerLeap\Generators\Template\TemplateLoader;
 
 
 class Template {

@@ -1,9 +1,9 @@
-<?php namespace Wn\Generators\Commands;
+<?php namespace FlickerLeap\Generators\Commands;
 
 
 class PivotSeederCommand extends BaseCommand {
 
-	protected $signature = 'wn:pivot-seeder
+	protected $signature = 'flickerleap:pivot-seeder
         {model1 : Name of the first model or table}
         {model2 : Name of the second model or table}
         {--count=10 : number of elements to add in database.}

@@ -1,4 +1,4 @@
-<?php namespace Wn\Generators\Exceptions;
+<?php namespace FlickerLeap\Generators\Exceptions;
 
 
 class ArgumentParserException extends \Exception {}

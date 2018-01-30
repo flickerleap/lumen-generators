@@ -1,9 +1,9 @@
-<?php namespace Wn\Generators\Commands;
+<?php namespace FlickerLeap\Generators\Commands;
 
 
 class PivotTableCommand extends BaseCommand {
 
-	protected $signature = 'wn:pivot-table
+	protected $signature = 'flickerleap:pivot-table
         {model1 : Name of the first model or table}
         {model2 : Name of the second model or table}
         {--add= : specifies additional columns like timestamps, softDeletes, rememberToken and nullableTimestamps.}
@@ -19,7 +19,7 @@ class PivotTableCommand extends BaseCommand {
     {
         $this->parseTables();
 
-        $this->call('wn:migration', [
+        $this->call('flickerleap:migration', [
             'table' => implode('_', $this->tables),
             '--schema' => $this->schema(),
             '--keys' => $this->keys(),

@@ -1,11 +1,11 @@
-<?php namespace Wn\Generators\Commands;
+<?php namespace FlickerLeap\Generators\Commands;
 
 
 use InvalidArgumentException;
 
 class ControllerCommand extends BaseCommand {
 
-	protected $signature = 'wn:controller
+	protected $signature = 'flickerleap:controller
         {model : Name of the model (with namespace if not App)}
 		{--no-routes= : without routes}
         {--force= : override the existing files}
@@ -44,7 +44,7 @@ class ControllerCommand extends BaseCommand {
                 $options['--laravel'] = true;
             }
 
-            $this->call('wn:route', $options);
+            $this->call('flickerleap:route', $options);
         }
     }
 

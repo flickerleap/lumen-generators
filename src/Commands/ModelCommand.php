@@ -1,9 +1,9 @@
-<?php namespace Wn\Generators\Commands;
+<?php namespace FlickerLeap\Generators\Commands;
 
 
 class ModelCommand extends BaseCommand {
 
-	protected $signature = 'wn:model
+	protected $signature = 'flickerleap:model
         {name : Name of the model.}
         {--fillable= : the fillable fields.}
         {--dates= : date fields.}

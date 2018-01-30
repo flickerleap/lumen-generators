@@ -1,9 +1,9 @@
-<?php namespace Wn\Generators\Commands;
+<?php namespace FlickerLeap\Generators\Commands;
 
 
 class SeederCommand extends BaseCommand {
 
-	protected $signature = 'wn:seeder
+	protected $signature = 'flickerleap:seeder
         {model : full qualified name of the model.}
         {--count=10 : number of elements to add in database.}
         {--force= : override the existing files}

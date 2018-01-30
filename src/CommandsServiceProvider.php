@@ -1,4 +1,4 @@
-<?php namespace Wn\Generators;
+<?php namespace FlickerLeap\Generators;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -22,87 +22,87 @@ class CommandsServiceProvider extends ServiceProvider
     }
 
     protected function registerModelCommand(){
-        $this->app->singleton('command.wn.model', function($app){
-            return $app['Wn\Generators\Commands\ModelCommand'];
+        $this->app->singleton('command.flickerleap.model', function($app){
+            return $app['FlickerLeap\Generators\Commands\ModelCommand'];
         });
-        $this->commands('command.wn.model');
+        $this->commands('command.flickerleap.model');
     }
 
     protected function registerControllerRestActionsCommand(){
-        $this->app->singleton('command.wn.controller.rest-actions', function($app){
-            return $app['Wn\Generators\Commands\ControllerRestActionsCommand'];
+        $this->app->singleton('command.flickerleap.controller.rest-actions', function($app){
+            return $app['FlickerLeap\Generators\Commands\ControllerRestActionsCommand'];
         });
-        $this->commands('command.wn.controller.rest-actions');
+        $this->commands('command.flickerleap.controller.rest-actions');
     }
 
     protected function registerControllerCommand(){
-        $this->app->singleton('command.wn.controller', function($app){
-            return $app['Wn\Generators\Commands\ControllerCommand'];
+        $this->app->singleton('command.flickerleap.controller', function($app){
+            return $app['FlickerLeap\Generators\Commands\ControllerCommand'];
         });
-        $this->commands('command.wn.controller');
+        $this->commands('command.flickerleap.controller');
     }
 
     protected function registerMigrationCommand(){
-        $this->app->singleton('command.wn.migration', function($app){
-            return $app['Wn\Generators\Commands\MigrationCommand'];
+        $this->app->singleton('command.flickerleap.migration', function($app){
+            return $app['FlickerLeap\Generators\Commands\MigrationCommand'];
         });
-        $this->commands('command.wn.migration');
+        $this->commands('command.flickerleap.migration');
     }
 
     protected function registerRouteCommand(){
-        $this->app->singleton('command.wn.route', function($app){
-            return $app['Wn\Generators\Commands\RouteCommand'];
+        $this->app->singleton('command.flickerleap.route', function($app){
+            return $app['FlickerLeap\Generators\Commands\RouteCommand'];
         });
-        $this->commands('command.wn.route');
+        $this->commands('command.flickerleap.route');
     }
 
     protected function registerTestCommand(){
-        $this->app->singleton('command.wn.test', function($app){
-            return $app['Wn\Generators\Commands\TestCommand'];
+        $this->app->singleton('command.flickerleap.test', function($app){
+            return $app['FlickerLeap\Generators\Commands\TestCommand'];
         });
-        $this->commands('command.wn.test');
+        $this->commands('command.flickerleap.test');
     }
 
     protected function registerResourceCommand(){
-        $this->app->singleton('command.wn.resource', function($app){
-            return $app['Wn\Generators\Commands\ResourceCommand'];
+        $this->app->singleton('command.flickerleap.resource', function($app){
+            return $app['FlickerLeap\Generators\Commands\ResourceCommand'];
         });
-        $this->commands('command.wn.resource');
+        $this->commands('command.flickerleap.resource');
     }
 
     protected function registerResourcesCommand(){
-        $this->app->singleton('command.wn.resources', function($app){
-            return $app['Wn\Generators\Commands\ResourcesCommand'];
+        $this->app->singleton('command.flickerleap.resources', function($app){
+            return $app['FlickerLeap\Generators\Commands\ResourcesCommand'];
         });
-        $this->commands('command.wn.resources');
+        $this->commands('command.flickerleap.resources');
     }
 
     protected function registerPivotTableCommand(){
-        $this->app->singleton('command.wn.pivot-table', function($app){
-            return $app['Wn\Generators\Commands\PivotTableCommand'];
+        $this->app->singleton('command.flickerleap.pivot-table', function($app){
+            return $app['FlickerLeap\Generators\Commands\PivotTableCommand'];
         });
-        $this->commands('command.wn.pivot-table');
+        $this->commands('command.flickerleap.pivot-table');
     }
 
     protected function registerFactoryCommand(){
-        $this->app->singleton('command.wn.factory', function($app){
-            return $app['Wn\Generators\Commands\FactoryCommand'];
+        $this->app->singleton('command.flickerleap.factory', function($app){
+            return $app['FlickerLeap\Generators\Commands\FactoryCommand'];
         });
-        $this->commands('command.wn.factory');
+        $this->commands('command.flickerleap.factory');
     }
 
     protected function registerSeederCommand(){
-        $this->app->singleton('command.wn.seeder', function($app){
-            return $app['Wn\Generators\Commands\SeederCommand'];
+        $this->app->singleton('command.flickerleap.seeder', function($app){
+            return $app['FlickerLeap\Generators\Commands\SeederCommand'];
         });
-        $this->commands('command.wn.seeder');
+        $this->commands('command.flickerleap.seeder');
     }
 
     protected function registerPivotSeederCommand(){
-        $this->app->singleton('command.wn.pivot.seeder', function($app){
-            return $app['Wn\Generators\Commands\PivotSeederCommand'];
+        $this->app->singleton('command.flickerleap.pivot.seeder', function($app){
+            return $app['FlickerLeap\Generators\Commands\PivotSeederCommand'];
         });
-        $this->commands('command.wn.pivot.seeder');
+        $this->commands('command.flickerleap.pivot.seeder');
     }
 
 }

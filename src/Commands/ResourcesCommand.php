@@ -1,4 +1,4 @@
-<?php namespace Wn\Generators\Commands;
+<?php namespace FlickerLeap\Generators\Commands;
 
 use InvalidArgumentException;
 use Symfony\Component\Yaml\Yaml;
@@ -6,7 +6,7 @@ use Symfony\Component\Yaml\Yaml;
 
 class ResourcesCommand extends BaseCommand {
 
-    protected $signature = 'wn:resources
+    protected $signature = 'flickerleap:resources
         {file : Path to the file containing resources declarations}
         {--path=app : where to store the model files.}
         {--force= : override the existing files}
@@ -46,7 +46,7 @@ class ResourcesCommand extends BaseCommand {
                 $options['--laravel'] = true;
             }
 
-            $this->call('wn:resource', $options);
+            $this->call('flickerleap:resource', $options);
             $modelIndex++;
         }
 
@@ -58,13 +58,13 @@ class ResourcesCommand extends BaseCommand {
         );
 
         foreach ($this->pivotTables as $tables) {
-            $this->call('wn:pivot-table', [
+            $this->call('flickerleap:pivot-table', [
                 'model1' => $tables[0],
                 'model2' => $tables[1],
                 '--force' => $this->option('force')
             ]);
 
-            // $this->call('wn:pivot-seeder', [
+            // $this->call('flickerleap:pivot-seeder', [
             //     'model1' => $tables[0],
             //     'model2' => $tables[1],
             //     '--force' => $this->option('force')

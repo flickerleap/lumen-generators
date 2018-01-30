@@ -1,9 +1,9 @@
-<?php namespace Wn\Generators\Commands;
+<?php namespace FlickerLeap\Generators\Commands;
 
 
 class MigrationCommand extends BaseCommand {
 
-	protected $signature = 'wn:migration
+	protected $signature = 'flickerleap:migration
         {table : The table name.}
         {--schema= : the schema.}
         {--add= : specifies additional columns like timestamps, softDeletes, rememberToken and nullableTimestamps.}

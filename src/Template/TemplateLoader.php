@@ -1,8 +1,8 @@
-<?php namespace Wn\Generators\Template;
+<?php namespace FlickerLeap\Generators\Template;
 
 use Illuminate\Filesystem\Filesystem;
-use Wn\Generators\Exceptions\TemplateException;
-use Wn\Generators\Template\Template;
+use FlickerLeap\Generators\Exceptions\TemplateException;
+use FlickerLeap\Generators\Template\Template;
 
 
 class TemplateLoader {

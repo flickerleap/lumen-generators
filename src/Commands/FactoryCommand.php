@@ -1,9 +1,9 @@
-<?php namespace Wn\Generators\Commands;
+<?php namespace FlickerLeap\Generators\Commands;
 
 
 class FactoryCommand extends BaseCommand {
 
-	protected $signature = 'wn:factory
+	protected $signature = 'flickerleap:factory
         {model : full qualified name of the model.}
         {--fields= : the fields to generate.}
         {--file= : the factories file.}

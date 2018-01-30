@@ -1,7 +1,7 @@
-<?php namespace Wn\Generators\Argument;
+<?php namespace FlickerLeap\Generators\Argument;
 
-use Wn\Generators\Argument\ArgumentFormat;
-use Wn\Generators\Exceptions\ArgumentParserException;
+use FlickerLeap\Generators\Argument\ArgumentFormat;
+use FlickerLeap\Generators\Exceptions\ArgumentParserException;
 
 
 class ArgumentParser {

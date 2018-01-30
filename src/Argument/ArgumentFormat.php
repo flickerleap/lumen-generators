@@ -1,4 +1,4 @@
-<?php namespace Wn\Generators\Argument;
+<?php namespace FlickerLeap\Generators\Argument;
 
 
 class ArgumentFormat {

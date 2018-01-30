@@ -1,8 +1,8 @@
-<?php namespace Wn\Generators\Argument;
+<?php namespace FlickerLeap\Generators\Argument;
 
 use Illuminate\Filesystem\Filesystem;
-use Wn\Generators\Argument\ArgumentFormat;
-use Wn\Generators\Exceptions\ArgumentFormatException;
+use FlickerLeap\Generators\Argument\ArgumentFormat;
+use FlickerLeap\Generators\Exceptions\ArgumentFormatException;
 
 
 class ArgumentFormatLoader {

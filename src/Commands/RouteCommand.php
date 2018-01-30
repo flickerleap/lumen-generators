@@ -1,11 +1,11 @@
-<?php namespace Wn\Generators\Commands;
+<?php namespace FlickerLeap\Generators\Commands;
 
 
 use InvalidArgumentException;
 
 class RouteCommand extends BaseCommand {
 
-	protected $signature = 'wn:route
+	protected $signature = 'flickerleap:route
 		{resource : Name of the resource.}
         {--controller= : Name of the RESTful controller.}
         {--laravel= : Use Laravel style route definitions}
