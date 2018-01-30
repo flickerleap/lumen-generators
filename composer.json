@@ -1,12 +1,12 @@
 {
-    "name": "wn/lumen-generators",
+    "name": "flickerleap/lumen-generators",
     "description": "A collection of generators for Lumen and Laravel 5.",
 	"keywords": ["lumen", "laravel", "rest", "api", "generators"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Amine Ben hammou",
-            "email": "webneat@gmail.com"
+            "name": "Seagyn Davis",
+            "email": "seagyn@flickerleap.com"
         }
     ],
     "require": {
@@ -17,7 +17,7 @@
     },
     "autoload": {
     	"psr-4": {
-    		"Wn\\Generators\\": "src/"
+    		"FlickerLeap\\Generators\\": "src/"
     	}
     }
 }
